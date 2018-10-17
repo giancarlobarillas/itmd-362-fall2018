@@ -3,7 +3,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: gray;
     background-attachment: fixed;
 }
 h1{
@@ -14,13 +13,13 @@ h1{
 #info{
     background: rgba(0, 0, 0, 0.9);
     color: white;
-    width: 200px;
     min-height: 100%;
     position: absolute;
     width: 300px;
     left:200px;
     top: 0;
-    opacity: 0.9;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 input[type=text], select {
@@ -48,5 +47,23 @@ input[type="submit"]{
 }
 
 input[type=submit]:hover {
-    background-color: lightgray;
+    background-color: lightgreen;
+}
+
+@media only screen and (max-width: 1600px) {
+    #info {
+        background-color: black;
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    #info {
+        margin: auto;
+        width: 600px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+        position:inherit; 
+    }
 }
