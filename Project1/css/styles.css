@@ -7,8 +7,9 @@ body {
 }
 h1{
     font-size: 2.4em;
-    font-family: sans-serif;
+    font-family: Oswald;
     text-decoration: underline;
+    text-align: center;
 }
 #info{
     background: rgba(0, 0, 0, 0.9);
@@ -34,8 +35,9 @@ input[type=text], select {
 }
 
 label{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
+    font-family: Arial;
 }
 input[type="submit"]{
     width:100%;
