@@ -4,18 +4,19 @@
         <title>Project 1</title>
         <link href="css/styles.css" type="text/css" rel="stylesheet">
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <script src="javascript/form.js"></script>
     </head>
     <body>
         <div id="info">
             <h1>Esports Sign Up</h1>
-            <form action="#" method="get" autocomplete="on">
+            <form action="#" method="get" autocomplete="on" onsubmit="submition()">
                 <div>
                     <label>First Name:</label>
-                    <input type="text" id="fname">
+                    <input type="text" id="fname" required>
                 </div>
                 <div>
                     <label>Last Name:</label>
-                    <input type="text" id="lname">
+                    <input type="text" id="lname" required>
                 </div>
                 <div>
                     <label>Year:</label>
@@ -39,7 +40,7 @@
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" required>
                 </div>
                 <div>
                     <input type="submit" value="Join The Team!">
